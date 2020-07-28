@@ -1,0 +1,37 @@
+<div id="nav">
+    
+  <img id="logo" src="assets/images/t2.jpg">
+  <ul id="ul1">
+    <a href="/userDashboard"><li class="li1">HOME</li></a>
+        <a href="/covidData"><li class="li1">COVID</li></a>
+    <a href="/login"><li  (click)=logout() class="li1">LOGOUT</li></a>
+      <a href="/viewTickets"><li class="li1">VIEW</li></a>
+  <a href="/submitTicket"><li class="li1">SUBMIT</li></a>
+  </ul>
+</div>
+<!-- <div class="card-header"> -->
+
+<!-- </div> -->
+<br>
+
+<div class="container">
+  <h1> Your Submitted Tickets</h1>
+    <div *ngFor="let todo of ticket" >
+        <div class="column">
+          <div class="card">
+            <h3 align="center">Ticket Id : <b> {{todo.ticketid}} </b> </h3>
+            <hr>
+            <p align="left">Project Name :<b>{{todo.project_name}}</b> </p>
+            <p align="left">Travel city : <b> {{todo.travel_city}}</b> </p>
+       <button ([ngModel])="ticketData" type="submit" class="btn" (click)=routeToDetail(todo)>View Details</button>
+   
+          </div>
+        </div>
+
+    </div>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item" href=" " *ngFor="let p of pages; let i=index">
+          <a class="nav-link" (click)="setPage(i,$event)" [ngClass]="{'active':i==page}">{{i}}</a>
+      </li>
+</ul>

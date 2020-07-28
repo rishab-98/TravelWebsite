@@ -1,0 +1,85 @@
+<div id="nav">
+
+    <img id="logo" src="assets/images/t2.jpg">
+    <ul id="ul1">
+        <a href="/adminDashboard">
+            <li class="li1">Home</li>
+        </a>
+        <a href="/adminLogin">
+            <li (click)=logout() class="li1">Logout</li>
+        </a>
+
+    </ul>
+</div>
+<h1 id="heading">Ticket Details</h1>
+<hr>
+<div class="response">
+    <table>
+        <tr>
+            <th>
+                TicketId
+            </th>
+            <th>
+                Comments
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Documents
+            </th>
+        </tr>
+        <tr>
+            <th>
+                {{ticket.ticketid}}
+            </th>
+            <th>
+                <input type="text" size="40" id="comment" [(ngModel)]="comment" placeholder="Enter comment"><br>
+            </th>
+            <th>
+                <select type="custom-select"   id="name" placeholder="Enter status" [(ngModel)]="status"
+                    name="name" >
+                   
+                    <option value="In Process">In Process</option>
+                    <option value="Done">Done</option>
+
+                </select>
+            </th>
+            <th>
+                <input type="file" id="file" [(ngModel)]="file" (change)=onFileChanged($event)>
+            </th>
+        </tr>
+
+    </table>
+  <button type="submit" id="submit" (click)=onUpload()>Submit</button>
+
+<div class="box">
+    <div class="inner-box">
+        <h2>Ticket ID: {{ticket.ticketid}}</h2>
+        <h6 >Status: <b>{{ticket.status}}</b></h6>
+        <hr>
+        <p class="left">Project Name :<b>{{ticket.project_name}}</b></p>
+        <p class="right">Ticket Date :<b>{{ticket.ticket_date}}</b> </p>
+
+        <p class="left">Request Type :<b>{{ticket.request_type}}</b></p>
+        <p class="right">Priority :<b>{{ticket.priority}}</b> </p>
+
+        <p class="left">Travel City :<b>{{ticket.travel_city}}</b></p>
+        <p class="right">From City :<b>{{ticket.from_city}}</b> </p>
+
+        <p class="left">Travel Start Date :<b>{{ticket.travel_start_date}}</b></p>
+        <p class="right">Travel End Date :<b>{{ticket.travel_end_date}}</b> </p>
+
+        <p class="left">Passport Number :<b>{{ticket.passport_number}}</b></p>
+        <p class="right">Expenses Borne By :<b>{{ticket.expense_borne_by}}</b> </p>
+
+        <p class="left">Passport Number :<b>{{ticket.travel_approver_name}}</b></p>
+        <p class="right">Expenses Borne By :<b>{{ticket.expected_duration}}</b> </p>
+
+        <p class="right">Upper Bound Cost :<b>{{ticket.upper_bound_cost}}</b></p>
+        <hr>
+        <p align="center">Additional Details :</p>
+        <p align="center"><b>{{ticket.additional_details}}</b> </p>
+
+    </div>
+</div>

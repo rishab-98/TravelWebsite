@@ -1,0 +1,43 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<body>
+  <div id="nav">
+
+    <img id="logo" src="assets/images/t2.jpg">
+    <ul id="ul1">
+      <a href="/adminLogin">
+        <li class="li1">Admin Login</li>
+      </a>
+      <a href="/login">
+        <li class="li1">User Login</li>
+      </a>
+      <a href="/register">
+        <li class="li1">Register</li>
+      </a>
+      <a href="/forget">
+        <li class="li1">Forgot</li>
+      </a>
+    </ul>
+  </div>
+
+  <form>
+    <h1>Admin Log in</h1>
+    <div class="inset">
+      <p>
+        <label for="email">EMAIL ADDRESS</label>
+        <input type="text" [(ngModel)]="username" name="email" id="email">
+      </p>
+      <p>
+        <label for="password">PASSWORD</label>
+        <input type="password" name="password" [(ngModel)]="password" id="password">
+    </div>
+
+    <div class="text-center">
+      <button id="login" (click)=adminLogin() class="btn btn-dark btn-sm"> Login</button>
+    </div>
+
+  </form>
+</body>

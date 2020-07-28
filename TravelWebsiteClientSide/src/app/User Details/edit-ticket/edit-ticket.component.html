@@ -1,0 +1,104 @@
+<body>
+  <div id="nav">
+
+    <img id="logo" src="assets/images/t2.jpg">
+    <ul id="ul1">
+      <a href="/userDashboard">
+        <li class="li1">HOME</li>
+      </a>
+      <a href="/covidData">
+        <li class="li1">COVID</li>
+      </a>
+      <a href="/login">
+        <li (click)=logout() class="li1">LOGOUT</li>
+      </a>
+      <a href="/viewTickets">
+        <li class="li1">VIEW</li>
+      </a>
+      <a href="/submitTicket">
+        <li class="li1">SUBMIT</li>
+      </a>
+    </ul>
+  </div>
+
+  <h4>Edit Your Ticket Details</h4>
+
+
+  <table>
+
+    <tr>
+      <th>Ticket Id:</th>
+      <td><span class="value" id="mail"><input type="text" [(ngModel)]="ticketForm.ticketid" readonly></span></td>
+    </tr>
+    <tr>
+      <th>Ticket Date:</th>
+      <td><span class="value" id="fname"><input type="date" [(ngModel)]="ticketForm.ticket_date"></span></td>
+    </tr>
+    <tr>
+      <th>Username:</th>
+      <td> <span class="value" id="lname"><input type="text" [(ngModel)]="ticketForm.username" readonly></span></td>
+    </tr>
+    <tr>
+      <th>Request Type:</th>
+      <td> <span class="value" id="bunit"><input type="text" [(ngModel)]="ticketForm.request_type"></span></td>
+    </tr>
+    <tr>
+      <th>Priority:</th>
+      <td><span class="value" id="title"><input type="text" [(ngModel)]="ticketForm.priority"></span></td>
+    </tr>
+    <tr>
+      <th>Travel City:</th>
+      <td> <span class="value" id="tel"><input type="text" [(ngModel)]="ticketForm.travel_city"></span></td>
+    </tr>
+    <tr>
+      <th>From City:</th>
+      <td> <span class="value" id="a1"><input type="text" [(ngModel)]="ticketForm.from_city"></span></td>
+    </tr>
+    <tr>
+      <th>Travel Start Date:</th>
+      <td><span class="value" id="a2"><input type="date" [(ngModel)]="ticketForm.travel_start_date"></span></td>
+    </tr>
+    <tr>
+      <th>Travel End Date:</th>
+      <td><span class="value" id="city"><input type="date" [(ngModel)]="ticketForm.travel_end_date"></span></td>
+    </tr>
+    <tr>
+      <th>Passport Number:</th>
+      <td><span class="value" id="state"><input type="text" [(ngModel)]="ticketForm.passport_number"></span></td>
+    </tr>
+    <tr>
+      <th> Project Name:</th>
+      <td><span class="value" id="zip"><input type="text" [(ngModel)]="ticketForm.project_name"></span></td>
+    </tr>
+    <tr>
+      <th>Expense Borne By:</th>
+      <td> <span class="value" id="country"><input type="text" [(ngModel)]="ticketForm.expense_borne_by"></span></td>
+    </tr>
+    <tr>
+      <th>Travel Approver Name:</th>
+      <td> <span class="value" id="country"><input type="text" [(ngModel)]="ticketForm.travel_approver_name"></span>
+      </td>
+    </tr>
+    <tr>
+      <th>Expected Duration:</th>
+      <td> <span class="value" id="country"><input type="text" [(ngModel)]="ticketForm.expected_duration"></span></td>
+    </tr>
+    <tr>
+      <th>Upper Bound Cost:</th>
+      <td> <span class="value" id="country"><input type="text" [(ngModel)]="ticketForm.upper_bound_cost"></span></td>
+    </tr>
+    <tr>
+      <th>Additional Details:</th>
+      <td> <span class="value" id="country"><input type="text" [(ngModel)]="ticketForm.additional_details"></span></td>
+    </tr>
+    <tr>
+      <th>Status:</th>
+      <td> <span class="value" id="country"><input type="text" [(ngModel)]="ticketForm.status" readonly></span></td>
+    </tr>
+
+  </table>
+  <button id="print">Print</button>
+  <button (click)=editTicket() id="edit">ReSubmit</button>
+  <button (click)=routeBack() id="submit">Back</button>
+
+</body>

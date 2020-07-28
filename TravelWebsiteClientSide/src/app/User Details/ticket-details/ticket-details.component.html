@@ -1,0 +1,103 @@
+<div id="nav">
+
+    <img id="logo" src="assets/images/t2.jpg">
+    <ul id="ul1">
+        <a download href="/userDashboard">
+            <li class="li1">HOME</li>
+        </a>
+        <a href="/covidData">
+            <li class="li1">COVID</li>
+        </a>
+        <a href="/login">
+            <li (click)=logout() class="li1">LOGOUT</li>
+        </a>
+        <a href="/viewTickets">
+            <li class="li1">VIEW</li>
+        </a>
+        <a href="/submitTicket">
+            <li class="li1">SUBMIT</li>
+        </a>
+    </ul>
+</div>
+<h2 id="heading">Ticket Details</h2>
+<h6>Scroll down to check Response.</h6>
+
+
+<div class="box">
+
+    <div class="inner-box">
+        <h2>Ticket ID: {{ticket.ticketid}}</h2>
+        <h6>Status: <b>{{ticket.status}}</b></h6>
+        <hr>
+        <p class="left">Project Name :<b>{{ticket.project_name}}</b></p>
+        <p class="right">Username:<b>{{ticket.username}}</b> </p>
+
+        <p class="left">Request Type :<b>{{ticket.request_type}}</b></p>
+        <p class="right">Priority :<b>{{ticket.priority}}</b> </p>
+
+        <p class="left">Travel City :<b>{{ticket.travel_city}}</b></p>
+        <p class="right">From City :<b>{{ticket.from_city}}</b> </p>
+
+        <p class="left">Travel Start Date :<b>{{ticket.travel_start_date}}</b></p>
+        <p class="right">Travel End Date :<b>{{ticket.travel_end_date}}</b> </p>
+
+        <p class="left">Passport Number :<b>{{ticket.passport_number}}</b></p>
+        <p class="right">Expenses Borne By :<b>{{ticket.expense_borne_by}}</b> </p>
+
+        <p class="left">Travel Approver Name:<b>{{ticket.travel_approver_name}}</b></p>
+        <p class="right">Expected Duration :<b>{{ticket.expected_duration}}</b> </p>
+
+        <p class="left">Ticket Date :<b>{{ticket.ticket_date}}</b> </p>
+        <p class="right">Upper Bound Cost :<b>{{ticket.upper_bound_cost}}</b></p>
+        <hr>
+        <p align="center">Additional Details :</p>
+        <p align="center"><b>{{ticket.additional_details}}</b> </p>
+        <hr>
+
+
+
+    </div>
+</div>
+
+
+<div id="response">
+    <table>
+        <tr>
+            <th>
+                TicketId
+            </th>
+            <th>
+                Comments
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Status
+            </th>
+        </tr>
+        <tr>
+            <th>
+                {{response.id}}
+            </th>
+            <th>
+                {{comment}}
+            </th>
+            <th>
+                <a [href]="retrievedImage" download={{download}}>
+                    {{name}}
+                </a>
+
+            </th>
+            <th>
+                {{response.status}}
+            </th>
+        </tr>
+    </table>
+</div>
+<div class="nav">
+    <button id="b1" class="btn btn-primary" (click)=editTicket()>Edit Ticket</button><br>
+    <button id="b2" class="btn btn-success" (click)=getImage()>Show Response</button>
+</div>
+
+

@@ -1,0 +1,77 @@
+body {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  color:white;
+  font-size:16px;
+  background:#333 ;
+  height:300%;
+  
+}
+
+th, td {
+    padding: 15px;
+  }
+  .value{
+      color:rgb(232, 233, 196);
+  }
+  table{
+      text-align: left;
+      margin-left: 10%;
+      margin-top:30px;
+      width:60%;
+  }
+#print,#edit,#submit{
+width:100px;
+background-color:slategray;
+margin:10px;
+
+}
+#edit{
+    background-color:slategray;
+}
+#submit{
+    background-color:slategray;
+    width:200px;
+}
+h6{
+    margin-top:40px;
+    margin-left: 140px;
+    margin-bottom:30px;
+}
+input{
+    width:300px;
+    
+}
+h4{
+    margin-left: 150px;;
+}
+#nav{
+    background-color:gainsboro;
+    opacity: 0.4;
+    color:red;
+    width:100%;
+    font-size: 20px;
+    font-weight: 700;
+    overflow:auto;
+    height:80px;
+    display:inline-block;
+    
+  }
+  .li1{
+      display: inline-block;
+      margin:30px;
+     
+  }
+  #logo{
+  width:60px;
+  height:auto;
+  float:left;
+  margin-left: 30px;
+  margin-top: 10px;
+  opacity:1;
+  
+  }
+  #ul1{
+      float:right;
+      text-align: center;
+      vertical-align:top;
+  }

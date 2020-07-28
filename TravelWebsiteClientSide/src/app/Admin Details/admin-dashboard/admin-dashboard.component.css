@@ -1,0 +1,100 @@
+h1{
+    text-align:"center";
+    font-weight: 600;
+    font-size: 30px;
+}
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  table{
+    width:100%;
+  }
+
+  .column {
+    float: left;
+    width: 60%;
+    padding: 20px 10px;
+  }
+
+.row {
+      margin: 30px -5px;
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    height:200px;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+ 
+    }
+  }
+
+.btn {
+    background-color: #008CBA;
+    margin-bottom: 100px; 
+  }
+.pagination{
+    width:100%;
+    background-color: whitesmoke;
+  }
+#left{
+  float:left;
+  margin-left: 400px;
+  
+}
+#right{
+  float:right;
+  margin-left: 250px;;
+ 
+}
+ b1{
+   width:100px;
+
+ }
+ #nav{
+  background-color:gainsboro;
+  opacity: 0.4;
+  color:red;
+  width:100%;
+  font-size: 20px;
+  font-weight: 700;
+  overflow:auto;
+  height:80px;
+  display:inline-block;
+  
+}
+.li1{
+    display: inline-block;
+    margin:30px;
+   
+}
+#logo{
+width:60px;
+height:auto;
+float:left;
+margin-left: 30px;
+margin-top: 10px;
+opacity:1;
+
+}
+#ul1{
+    float:right;
+    text-align: center;
+    vertical-align:top;
+}

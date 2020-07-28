@@ -1,0 +1,101 @@
+body {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  color:black;
+  font-size:14px;
+  background:gray ;
+  height:250%;
+}
+* {
+    box-sizing: border-box;
+  }
+  input {
+    width: 60%;
+    padding: 8px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background:gainsboro;
+    border-radius:15px;
+    
+  
+  }
+  
+  input:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+   background-color:whitesmoke;
+    color:black;
+    font-size: 20px;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    border-radius: 20px;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+ 
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+ 
+  h1{
+   
+   
+  }
+  .head{
+    margin-top: 20px;
+    margin-bottom: 40px;
+   margin-left:100px;
+  }
+
+  #nav{
+    background-color:gainsboro;
+    opacity: 0.4;
+    color:red;
+    width:100%;
+    font-size: 20px;
+    font-weight: 700;
+    overflow:auto;
+    height:80px;
+    display:inline-block;
+    
+  }
+  .li1{
+      display: inline-block;
+      margin:30px;
+     
+  }
+  #logo{
+  width:60px;
+  height:auto;
+  float:left;
+  margin-left: 30px;
+  margin-top: 10px;
+  opacity:1;
+  
+  }
+  #ul1{
+      float:right;
+      text-align: center;
+      vertical-align:top;
+  }

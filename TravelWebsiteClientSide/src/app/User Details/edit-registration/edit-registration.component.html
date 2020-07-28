@@ -1,0 +1,58 @@
+<body>
+    <div id="nav">
+    
+		<img id="logo" src="assets/images/t2.jpg">
+		<ul id="ul1">
+			<a href="/adminLogin"><li class="li1">Admin Login</li></a>
+		  <a href="/login"><li class="li1">Login</li></a>
+			  <a href="/register"><li class="li1">Register</li></a>
+		  <a href="/forget"><li class="li1">Forgot</li></a>
+		</ul>
+	  </div>
+    <h5> Thankyou for Registering. The Admin will contact you shortly with your username and password.</h5>
+  
+    
+    <table>
+        
+   <tr>
+ <th>Email:</th>  <td><span class="value" id="mail">{{userData.email}}</span></td>
+</tr>
+   <tr> 
+       <th>FirstName:</th><td><span class="value" id="fname">{{userData.firstName}}</span></td>
+   </tr>
+   <tr>
+       <th>LastName:</th><td> <span class="value" id="lname">{{userData.lastName}}</span></td>
+   </tr> 
+   <tr>
+    <th>BusinessUnit:</th><td> <span class="value" id="bunit">{{userData.businessUnit}}</span></td>
+</tr>
+   <tr> 
+       <th>Title:</th> <td><span class="value" id="title">{{userData.title}}</span></td>
+    </tr>
+   <tr> 
+       <th>Telephone:</th><td> <span class="value" id="tel">{{userData.telephone}}</span></td>
+    </tr>
+   <tr> 
+       <th>Address1:</th><td> <span class="value" id="a1">{{userData.address1}}</span></td>
+   </tr>
+   <tr>
+   <th>Address2:</th> <td><span class="value" id="a2">{{userData.address2}}</span></td>
+</tr>
+<tr>
+   <th>City:</th> <td><span class="value" id="city">{{userData.city}}</span></td> 
+</tr>
+<tr>
+    <th>State:</th><td><span class="value" id="state">{{userData.state}}</span></td>
+</tr>
+<tr>
+   <th> Zip:</th><td><span class="value" id="zip">{{userData.zip}}</span></td> 
+</tr>
+<tr>
+  <th>Country:</th>  <td> <span class="value" id="country">{{userData.country}}</span></td>
+</tr>
+</table>
+<button  id="print">Print</button>
+    <button (click)=routeBack() id="edit">Edit</button>
+    <button (click)=sendUserData() id="submit" >Home Page</button>
+
+</body>
